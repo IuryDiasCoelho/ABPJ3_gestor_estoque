@@ -1,7 +1,6 @@
 estoque={}
 financeiro={}
 caixa=0
-print("Bem vindo ao seu gestor de estoque")
 
 def menu():
     print("\n--- MENU DE OPÇÕES ---")
@@ -51,36 +50,3 @@ def venda():
             print("Digite uma quantidade válida (número inteiro).")
     else:
         print("Produto não encontrado no estoque.")
-
-
-while True:
-    menu()
-    usuario=input('digite a ação que quer realizar: ').lower()
-    match usuario:
-        case "cadastrar produto" | "1":
-            cadastrar()
-            print("cadastrando produto...")
-
-        case "atualizar estoque" | "2":
-            estoque_disponivel()
-            cadastrar()
-            estoque_disponivel()
-            print("atualizando estoque...")
-
-        case "registrar venda" | "3":
-
-            venda()
-
-        case "estoque disponivel" | "4":
-            estoque_disponivel()
-
-        case "valor em caixa" | "5":
-            print("valor em caixa: ", caixa, "R$")
-
-        case "sair" | "6":
-            print("saindo...")
-            break
-
-        case _:
-            print("\nDigite novamente o comando")
-
