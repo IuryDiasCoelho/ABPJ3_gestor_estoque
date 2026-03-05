@@ -41,7 +41,6 @@ def venda():
                 estoque[venda_produto] -= quantidade
                 soma = financeiro[venda_produto] * quantidade
                 caixa += soma
-
                 print("vendendo ", quantidade, " unidades de ", venda_produto)
                 print("registrando venda...")
                 print("Estoque Atualizado")

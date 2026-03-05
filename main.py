@@ -1,7 +1,5 @@
 import modulo
 
-
-
 print("Bem vindo ao seu gestor de estoque")
 
 while True:
@@ -34,4 +32,3 @@ while True:
 
         case _:
             print("\nDigite novamente o comando")
-
